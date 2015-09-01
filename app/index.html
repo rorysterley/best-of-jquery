@@ -10,10 +10,69 @@
   <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Best of jQuery</h1>
+      </div>
+    </div>
+  </header>
 
+  <main class="container-fluid" id="main">
+    <div class="row">
+      <div class="section" id="updating-elements">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Updating Elements</h2>
+            <p>jQuery can update the DOM with several methods including: 
+              <code>.html()</code> <code>.text()</code> 
+              <code>.replaceWith()</code> <code>.remove()</code>.
+              <br />This example will demonstrate <code>.html()</code> and 
+              <code>.replaceWith()</code></p>
+            <p>As this is the first example, the JavaScript section will have a
+               little more info, much of wich is relivant to all future examples.</p>
+          </div>
+        </div>
+        <div class="row displays">
+          <div class="col-sm-6">
+            <section class="center label">Result</section>
+            <div class="well display-result">
+              <h2>Original Content</h2>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <section class="center label">JavaScript</section>
+            <div class="well display-javascript">
+              baz
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="button"
+              onclick="app.util.resetSection('#updating-elements')">Reset</button>
+            <button type="button"
+              onclick="app.util.tryIt('#updating-elements')">Try it</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="footer" class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="center">Rory R. Sterley &copy 2015</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Scripts -->
-  <script type="text/javascript" src="js/bundle.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <!-- Sections -->
+  <script type="text/javascript" src="js/sections/updating_elements.js"></script>
 </body>
 </html>
 

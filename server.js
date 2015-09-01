@@ -9,9 +9,8 @@ var sampleRoutes = require('./routes/sample_routes');
 // SETTUP =====================================================================
 var app = express();
 var port = process.env.PORT || 3000;
-var subdir = process.env.PRODUCTION ? '/public' : '/build';
 
-app.use(express.static(__dirname + subdir));
+app.use(express.static(__dirname + '/app'));
 
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/b_o_jq_dev');
 
