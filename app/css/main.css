@@ -16,7 +16,7 @@ ul {
   padding: 0;}
 
 h1 {
-  font-size: 250%;
+  font-size: 350%;
   font-family: serif;
   text-align: center;
   text-shadow: 5px 5px #000000;}
@@ -63,4 +63,22 @@ footer {font-size: 90%;}
   padding-top: 5px;
   padding-bottom: 5px;
   background: #245967;}
+
+.display-result, .display-javascript {min-height: 175px;}
+
+.display-javascript {
+  font-size: 90%;
+  overflow: scroll;
+  white-space: nowrap;}
+
+@media screen and (max-width: 766px) {
+  .hide-when-small-screen {
+    visibility: hidden;
+    display: none !important;}}
+@media screen and (min-width: 767px) {
+  .hide-when-large-screen {
+    visibility: hidden;
+    display: none !important;}}
+
+.pad-bottom {padding-bottom: 15px;}
 

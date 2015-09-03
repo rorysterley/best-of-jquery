@@ -19,35 +19,51 @@
   </header>
 
   <main class="container-fluid" id="main">
+
+    <!-- Section: updating-elements -->
     <div class="row">
       <div class="section" id="updating-elements">
+
         <div class="row">
           <div class="col-xs-12">
             <h2>Updating Elements</h2>
             <p>jQuery can update the DOM with several methods including: 
               <code>.html()</code> <code>.text()</code> 
               <code>.replaceWith()</code> <code>.remove()</code>.
-              <br />This example will demonstrate <code>.html()</code> and 
-              <code>.replaceWith()</code></p>
-            <p>As this is the first example, the JavaScript section will have a
-               little more info, much of wich is relivant to all future examples.</p>
+              <br />This example will demonstrate <code>.html()</code>.</p>
           </div>
         </div>
+
         <div class="row displays">
           <div class="col-sm-6">
             <section class="center label">Result</section>
             <div class="well display-result">
               <h2>Original Content</h2>
             </div>
+          </div>  
+
+          <div class="col-xs-12 hide-when-large-screen pad-bottom">
+            <button type="button"
+              onclick="app.util.resetSection('#updating-elements')">Reset</button>
+            <button type="button"
+              onclick="app.util.tryIt('#updating-elements')">Try it</button>
           </div>
+
           <div class="col-sm-6">
             <section class="center label">JavaScript</section>
-            <div class="well display-javascript">
-              baz
+            <div class="well display-javascript"> 
+              <code>
+                function(section) {<br />
+                  &nbsp&nbsp$(section + ' .display-result').html(function() {<br />
+                    &nbsp&nbsp&nbsp&nbspreturn '&lth2&gtUpdated Content Here!&lt/h2&gt';<br />
+                  &nbsp&nbsp});<br />
+                }
+              </code>
             </div>
           </div>
         </div>
-        <div class="row">
+
+        <div class="row hide-when-small-screen">
           <div class="col-xs-12">
             <button type="button"
               onclick="app.util.resetSection('#updating-elements')">Reset</button>
@@ -56,7 +72,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- End Section: updating-elements -->
 
   </main>
 
